@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <header id="header">
+    <div class="header-container">
+      <a href="index.html"><img src="./img/logofinal.png" alt="Logo" class="header-logo"></a>
+
+      <div class="header-container-left">
+      <nav class="nav">
+        <ul class="nav-list">
+          <input class="search" type="text" placeholder="Search..">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" id="login"  class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="#" id="register" class="nav-link">Register</a></li>
+          <li class="nav-item"><a href="admin.html"class="nav-link">Admin</a></li>
+
+
+        </ul>
+
+      </nav>
+      <div class="nav-menu">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item">
+            <div class="nav-burger">
+              <div class="line--1"></div>
+              <div class="line--2"></div>
+              <div class="line--3"></div>
+            </div>
+          </li>
+          <li class="nav-menu-item">
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+        <div class="client">
+            <img src="./img/bugsbunny.png">
+            <table>
+                <tr>
+                    <th>Username: </th>
+                    <td  class="js-user"></td>
+                </tr>
+                <tr>
+                    <th>Password: </th>
+                    <td class="js-user"></td>
+
+                </tr>
+                <tr>
+                    <th>Email: </th>
+                    <td  class="js-user"></td>
+
+                </tr>
+                <tr>
+                    <th>Name: </th>
+                    <td class="js-user"></td>
+
+                </tr>
+                <tr>
+                    <th>Last name: </th>
+                    <td class="js-user"></td>
+
+                </tr>
+                <tr>
+                    <th>Birthday: </th>
+                    <td class="js-user"></td>
+
+                </tr>
+                <tr>
+                    <th>Address: </th>
+                    <td class="js-user"></td>
+
+                </tr>
+                <tr>
+                    <th>Phone Number: </th>
+                    <td class="js-user"></td>
+
+                </tr>
+            </table>
+            <a href="client-edit.html" id="edit-btn"><button type="button">Edit</button></a>
+            <button id="delete-btn" type="button">Delete</button>
+        </div>
+        <div class="wrapper"> <!--Ovo je deo gde se nalazi login  -->
+          <div class="container"  id="login"> <!--Ovo je deo gde se nalazi login  -->
+    
+            <label for="show" class="close-btn fa fa-times"></label>
+            <button class="close-btn fa fa-times" id="close"></button>
+            <div class="text">Ready to learn? Login</div>
+            <form name="loginForm"  method="post" id="logForm">
+              <div class="data">
+                <label class="label-form">Email</label>
+                <input id="email1" type="email" required placeholder="Input your email" >
+                
+                <div class="error"></div>
+    
+              </div>
+              <div class="data">
+                <label class="label-form">Password</label>
+                <input id="password1" required type="password"  placeholder="Password" >
+                <div class="error"></div>
+              </div>
+              <div class="forgot-pass"><a href="#">Forgot Password?</a></div>
+              <div class="btn">
+                <div class="inner"></div>
+                <button  type="submit">login</button>
+              </div>
+              <div class="signup-link">Not a member?<a href="#">Sign Up Now</a></div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="register"> <!--Ovo je deo gde se nalazi register  -->     
+          <div class="register-con">
+            <label for="" class="close-btn fa fa-times"></label>
+            <button class="close-btn fa fa-times" id="close1"></button>
+            <div class="register">
+              <h1>Register</h1>
+              <p></p></div>
+            <div class="text">Please fill in this form to create an account.</div>
+            <form  id="registrationForm">
+              <div class="data">
+                <label>User Name</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+              </div>
+              <div class="data">
+                <label>Name</label>
+                <input type="text" name="name" id="name" >
+                <div class="error"></div>
+              </div>
+              <div class="data">
+                <label>Last Name</label>
+                <input id="lastName" name="lastName" type="text" >
+                <div class="error"></div>
+              </div>
+              <div class="data">
+                <label>Email</label>
+                <input id="email" name="email" type="email" >
+                <div class="error"></div>
+              </div>
+              <div class="data">
+                <label>Password</label>
+                <input id="password" name="password" type="password" >
+                <div class="error"></div>
+              </div>
+              <div class="data">
+                <label>Confirm Password</label>
+                <input id="confirmPass" name="confirmPass" type="password" >
+                <div class="error"></div>
+              </div>
+              <div class="data">
+                <label>Phone Number</label>
+                <input id="phoneNum" name="phoneNum" type="phone-num" >
+                <div class="error"></div>
+              </div>
+              <div class="data">
+                <label>Adress</label>
+                <input id="adress" name="adress" type="text" >
+                <div class="error"></div>
+              </div>
+              <div class="data">
+                <label>Birthday</label>
+                <input id="birthday" name="birthday" type="date" >
+                <div class="error"></div>
+              </div>
+              <div class="btn">
+                <div class="inner"></div>
+                <button type="submit">Register</button>
+              </div>
+  
+              <div class="container-signin">
+                <p>Already have an account? <a id="signIn" href="#">Sign in</a>.</p>
+              </div>
+            </form>
+        </div>
+      </div>
+        <script src="./js/client-page.js"></script>
+        <script src="./js/Validation.js"></script>
+</body>
+</html>
